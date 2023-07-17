@@ -1,0 +1,322 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.fContainer {
+  display: flex;
+  width: 100%;
+  height: 12vh;
+  background-color: rgb(56, 9, 8);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  color: darkred;
+  font-size: 30px;
+}
+
+.logo span {
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navigation > li {
+  list-style-type: none;
+  padding: 15px;
+  position: relative;
+}
+
+.navigation > li > a {
+  color: rgb(228, 217, 217);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation > li > a:hover {
+  color: darkred;
+  transition: all 0.3s ease-in-out;
+}
+
+.active:hover {
+  color: white !important;
+}
+
+.dropdown .dropdown-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: burlywood;
+  padding: 10px;
+  width: 150px;
+}
+
+.dropdown .dropdown-menu li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.dropdown .dropdown-menu li a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.dropdown-toggle:hover + .dropdown,
+.dropdown:hover {
+  display: block;
+}
+
+.dropdown li a:hover {
+  color: darkred;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner {
+  height: 600px;
+  background-image: url(gambar/bmw.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 400px;
+  }
+}
+
+.banner img {
+  margin-top: 10px;
+  border-radius: 40px;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.banner h1 {
+  margin-top: 20px;
+}
+
+.banner button {
+  margin-top: 30px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 50px;
+  border: none;
+  max-width: 100%;
+}
+
+.banner button:hover {
+  background-color: rgb(141, 140, 140);
+  border: 1px solid white;
+  color: black;
+}
+
+.info-box {
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-kiri,
+.box-kanan,
+.box-tengah {
+  width: 300px;
+  height: 520px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+}
+
+.box-kiri:hover,
+.box-kanan:hover,
+.box-tengah:hover {
+  background-color: burlywood;
+  color: white;
+}
+
+.mainfooter {
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+  font-family: "Open Sans";
+  padding: 40px;
+}
+
+.mainfooter h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.mainfooter p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials img {
+  margin: 0 20px;
+}
+
+.bottomfooter {
+  background: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bottomfooter p {
+  color: #f0f0f0;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  font-family: "Open Sans";
+}
+
+.bottomfooter span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+.container {
+  min-height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("gambar/a.jpg") no-repeat center center/cover;
+}
+
+.container form {
+  width: 100%;
+  max-width: 670px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.container form h1 {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.container form input {
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid #fff;
+  max-width: 100%;
+}
+
+.container form input::placeholder {
+  color: #ddd;
+}
+
+.container form #lastName,
+.container form #mobile {
+  margin-left: 20px;
+}
+
+.container form h4 {
+  color: #fff;
+  font-weight: 300;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.container form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 100%;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+  resize: vertical;
+}
+
+textarea::-webkit-scrollbar {
+  width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(194, 194, 194, 0.713);
+}
+
+.container form #button {
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+  width: 100px;
+  padding: 0;
+  margin-right: auto;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  max-width: 100%;
+}
+
+.container form #button:hover {
+  opacity: 0.7;
+}
+
+.merk img {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  max-width: 100%;
+}
